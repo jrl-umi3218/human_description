@@ -1,11 +1,33 @@
 <robot name="human">
   <planar_surface name="Back" link="TorsoLink">
-    <origin xyz="-0.13 0 0.23" rpy="3.14159 -1.570796 0" />
+    <origin xyz="-0.13 0 0.23" rpy="0 -1.570796 0" />
     <points>
       <point xy="-0.2 0.1" />
       <point xy="-0.2 -0.1" />
       <point xy="0.2 -0.17" />
       <point xy="0.2 0.17" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+  <planar_surface name="Chest" link="TorsoLink">
+    <origin xyz="0.11 0 0.23" rpy="3.14159 -1.570796 0" />
+    <points>
+      <point xy="-0.2 0.1" />
+      <point xy="-0.2 -0.1" />
+      <point xy="0.2 -0.15" />
+      <point xy="0.2 0.15" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+  <planar_surface name="RightShoulder" link="TorsoLink">
+    <origin xyz="0.07 -0.13 0.33" rpy="2.0 3.14159 1.5" />
+    <points>
+      <point xy="-0.1 0.1" />
+      <point xy="-0.1 -0.1" />
+      <point xy="0.1 -0.1" />
+      <point xy="0.1 0.1" />
     </points>
     <material name="plastic" />
   </planar_surface>
