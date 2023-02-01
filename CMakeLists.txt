@@ -11,7 +11,7 @@ find_package(catkin REQUIRED COMPONENTS xacro)
 
 catkin_package(
     SKIP_PKG_CONFIG_GENERATION
-    CATKIN_DEPENDS xacro mc_rbdyn_urdf
+    CATKIN_DEPENDS xacro
 )
 
 # Configure the develspace pkg-config file
