@@ -9,4 +9,26 @@
     </points>
     <material name="plastic" />
   </planar_surface>
+
+    <planar_surface name="LFsensor" link="LAnkleLink">
+    <origin xyz="0.088 0 -0.1" rpy="0 0 0" />
+    <points>
+      <point xy="-0.018 0.021" />
+      <point xy="0.018 0.021" />
+      <point xy="0.018 -0.021" />
+      <point xy="-0.018 -0.021" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+  <planar_surface name="LBsensor" link="LAnkleLink">
+    <origin xyz="-0.041 0 -0.1" rpy="0 0 0" />
+    <points>
+      <point xy="-0.018 0.021" />
+      <point xy="0.018 0.021" />
+      <point xy="0.018 -0.021" />
+      <point xy="-0.018 -0.021" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
 </robot>
