@@ -19,13 +19,15 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://human_description/meshes/HipsLinkFull.dae" scale=" 1 1 0.8"/>
+        <mesh filename="package://human_description/meshes/HipsLinkFull.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/HipsLinkFull.dae" scale=" 0.8 0.8 0.8"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://human_description/meshes/HipsLinkFull.dae" scale=" 1 1 0.8"/>
+        <mesh filename="package://human_description/meshes/HipsLinkFull.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/HipsLinkFull.dae" scale=" 0.8 0.8 0.8"/> -->
       </geometry>
     </collision>
   </link>
@@ -39,13 +41,15 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://human_description/meshes/TorsoLinkFull.dae" scale=" 1 1 0.9"/>
+        <mesh filename="package://human_description/meshes/TorsoLinkFull.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/TorsoLinkFull.dae" scale=" 0.8 0.95 0.9"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://human_description/meshes/TorsoLinkFull.dae" scale=" 1 1 0.9"/>
+        <mesh filename="package://human_description/meshes/TorsoLinkFull.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/TorsoLinkFull.dae" scale=" 0.8 0.95 0.9"/> -->
       </geometry>
     </collision>
   </link>
@@ -60,12 +64,14 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/HeadLinkFull.dae"/>
+        <!-- <mesh filename="package://human_description/meshes/HeadLinkFull.dae" scale=" 0.9 0.9 0.9"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/HeadLinkFull.dae"/>
+        <!-- <mesh filename="package://human_description/meshes/HeadLinkFull.dae" scale=" 0.9 0.9 0.9"/> -->
       </geometry>
     </collision>
   </link>
@@ -80,12 +86,14 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/LArmLinkFull.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/LArmLinkFull.dae" scale=" 0.7 0.8 0.8"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/LArmLinkFull.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/LArmLinkFull.dae" scale=" 0.7 0.8 0.8"/> -->
       </geometry>
     </collision>
   </link>
@@ -100,12 +108,14 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/LElbowLink.dae"/>
+        <!-- <mesh filename="package://human_description/meshes/LElbowLink.dae" scale=" 0.8 0.8 1"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/LElbowLink.dae"/>
+        <!-- <mesh filename="package://human_description/meshes/LElbowLink.dae" scale=" 0.8 0.8 1"/> -->
       </geometry>
     </collision>
   </link>
@@ -119,13 +129,15 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://human_description/meshes/LForearmLink.dae" scale=" 1 1 0.875"/>
+        <mesh filename="package://human_description/meshes/LForearmLink.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/LForearmLink.dae" scale=" 0.9 0.9 0.875"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://human_description/meshes/LForearmLink.dae" scale=" 1 1 0.875"/>
+        <mesh filename="package://human_description/meshes/LForearmLink.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/LForearmLink.dae" scale=" 0.9 0.9 0.875"/> -->
       </geometry>
     </collision>
   </link>
@@ -160,12 +172,14 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/RArmLinkFull.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/RArmLinkFull.dae" scale=" 0.7 0.8 0.8"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/RArmLinkFull.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/RArmLinkFull.dae" scale=" 0.7 0.8 0.8"/> -->
       </geometry>
     </collision>
   </link>
@@ -180,12 +194,14 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/RElbowLink.dae"/>
+        <!-- <mesh filename="package://human_description/meshes/RElbowLink.dae" scale=" 0.8 0.8 1"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/RElbowLink.dae"/>
+        <!-- <mesh filename="package://human_description/meshes/RElbowLink.dae" scale=" 0.8 0.8 1"/> -->
       </geometry>
     </collision>
   </link>
@@ -199,13 +215,15 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://human_description/meshes/RForearmLink.dae" scale=" 1 1 0.875"/>
+        <mesh filename="package://human_description/meshes/RForearmLink.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/RForearmLink.dae" scale=" 0.9 0.9 0.875"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://human_description/meshes/RForearmLink.dae" scale=" 1 1 0.875"/>
+        <mesh filename="package://human_description/meshes/RForearmLink.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/RForearmLink.dae" scale=" 0.9 0.9 0.875"/> -->
       </geometry>
     </collision>
   </link>
@@ -240,12 +258,14 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/LLegLink.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/LLegLink.dae" scale=" 0.8 0.8 0.9"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/LLegLink.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/LLegLink.dae" scale=" 0.8 0.8 0.9"/> -->
       </geometry>
     </collision>
   </link>
@@ -260,12 +280,14 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/LShinLink.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/LShinLink.dae" scale=" 0.8 0.8 0.9"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/LShinLink.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/LShinLink.dae" scale=" 0.8 0.8 0.9"/> -->
       </geometry>
     </collision>
   </link>
@@ -300,12 +322,14 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/RLegLink.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/RLegLink.dae" scale=" 0.8 0.8 0.9"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/RLegLink.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/RLegLink.dae" scale=" 0.8 0.8 0.9"/> -->
       </geometry>
     </collision>
   </link>
@@ -320,12 +344,14 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/RShinLink.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/RShinLink.dae" scale=" 0.8 0.8 0.9"/> -->
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://human_description/meshes/RShinLink.dae" scale=" 1 1 1"/>
+        <!-- <mesh filename="package://human_description/meshes/RShinLink.dae" scale=" 0.8 0.8 0.9"/> -->
       </geometry>
     </collision>
   </link>
@@ -413,7 +439,7 @@
   <joint name="Head_0" type="revolute">
     <parent link="TorsoLink"/>
     <child link="torso2head_1"/>
-    <origin rpy="0.0 0.0 0.0" xyz="-0.025 0.0 0.46"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.025 0.0 0.525"/>
     <axis xyz="1 0 0"/>
     <limit effort="100" lower="-0.62" upper="0.62" velocity="100"/>
   </joint>
@@ -455,7 +481,8 @@
   <joint name="LArm_0" type="revolute">
     <parent link="TorsoLink"/>
     <child link="torso2lshoulder_1"/>
-    <origin rpy="0.0 0.0 0.0" xyz="-0.05 0.15 0.30"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.05 0.15 0.35"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="-0.03 0.17 0.30"/> -->
     <axis xyz="1 0 0"/>
     <limit effort="60" lower="-1.42" upper="1.57" velocity="100"/>
   </joint>
@@ -477,21 +504,39 @@
   </joint>
 
 
-  <joint name="LElbow" type="revolute">
+  <joint name="LElbow" type="fixed">
     <parent link="LArmLink"/>
     <child link="LElbowLink"/>
     <origin rpy="0.0 0.0 0.0" xyz="-0.0 0.2 0.0"/>
-    <axis xyz="0 1 0"/>
-    <limit effort="100" lower="-1.57" upper="1.0" velocity="100"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="-0.0 0.16 0.0"/> -->
+    <!-- <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.57" upper="1.0" velocity="100"/> -->
   </joint>
 
+  <link name="elbow2lforearm">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.05"/>
+      <inertia ixx="0.000002" ixy="0.0" ixz="0.0" iyy="0.000002" iyz="0.0" izz="0.000002"/>
+    </inertial>
+  </link>
 
-  <joint name="LForearm" type="revolute">
+  <joint name="LForearm_0" type="revolute">
     <parent link="LElbowLink"/>
-    <child link="LForearmLink"/>
+    <child link="elbow2lforearm"/>
     <origin rpy="0.0 0.0 0.0" xyz="-0.01 0.05 0.0"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="-0.01 0.06 0.0"/> -->
     <axis xyz="0 0 1"/>
     <limit effort="100" lower="-2.5" upper="0.0" velocity="100"/>
+  </joint>
+
+  <joint name="LForearm_1" type="revolute">
+    <parent link="elbow2lforearm"/>
+    <child link="LForearmLink"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.01 0.05 0.0"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="-0.01 0.06 0.0"/> -->
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.57" upper="1.0" velocity="100"/>
   </joint>
 
 
@@ -507,7 +552,8 @@
   <joint name="LWrist_0" type="revolute">
     <parent link="LForearmLink"/>
     <child link="forearm2lwrist_1"/>
-    <origin rpy="0.0 0.0 0.0" xyz="0.01 0.21 -0.01"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.01 0.24 -0.01"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="0.01 0.23 -0.01"/> -->
     <axis xyz="1 0 0"/>
     <limit effort="100" lower="-1.5" upper="1.5" velocity="100"/>
   </joint>
@@ -542,7 +588,8 @@
   <joint name="RArm_0" type="revolute">
     <parent link="TorsoLink"/>
     <child link="torso2rshoulder_1"/>
-    <origin rpy="0.0 0.0 0.0" xyz="-0.05 -0.15 0.3"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.05 -0.15 0.35"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="-0.03 -0.17 0.3"/> -->
     <axis xyz="1 0 0"/>
     <limit effort="60" lower="-1.42" upper="1.57" velocity="100"/>
   </joint>
@@ -564,23 +611,40 @@
   </joint>
 
 
-  <joint name="RElbow" type="revolute">
+  <joint name="RElbow" type="fixed">
     <parent link="RArmLink"/>
     <child link="RElbowLink"/>
     <origin rpy="0.0 0.0 0.0" xyz="-0.0 -0.2 0.0"/>
-    <axis xyz="0 1 0"/>
-    <limit effort="100" lower="-1.57" upper="1.0" velocity="100"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="-0.0 -0.16 0.0"/> -->
+    <!-- <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.57" upper="1.0" velocity="100"/> -->
   </joint>
 
+  <link name="elbow2rforearm">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.05"/>
+      <inertia ixx="0.000002" ixy="0.0" ixz="0.0" iyy="0.000002" iyz="0.0" izz="0.000002"/>
+    </inertial>
+  </link>
 
-  <joint name="RForearm" type="revolute">
+  <joint name="RForearm_0" type="revolute">
     <parent link="RElbowLink"/>
-    <child link="RForearmLink"/>
+    <child link="elbow2rforearm"/>
     <origin rpy="0.0 0.0 0.0" xyz="-0.01 -0.05 0.0"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="-0.01 -0.06 0.0"/> -->
     <axis xyz="0 0 1"/>
     <limit effort="100" lower="0.0" upper="2.5" velocity="100"/>
   </joint>
 
+  <joint name="RForearm_1" type="revolute">
+    <parent link="elbow2rforearm"/>
+    <child link="RForearmLink"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.01 -0.05 0.0"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="-0.01 -0.06 0.0"/> -->
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.57" upper="1.0" velocity="100"/>
+  </joint>
 
   <!-- Forearm to right Wrist connection-->
   <link name="forearm2rwrist_1">
@@ -594,7 +658,8 @@
   <joint name="RWrist_0" type="revolute">
     <parent link="RForearmLink"/>
     <child link="forearm2rwrist_1"/>
-    <origin rpy="0.0 0.0 0.0" xyz="0.01 -0.21 -0.01"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.01 -0.24 -0.01"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="0.01 -0.23 -0.01"/> -->
     <axis xyz="1 0 0"/>
     <limit effort="100" lower="-1.5" upper="1.5" velocity="100"/>
   </joint>
@@ -628,7 +693,8 @@
   <joint name="LLeg_0" type="revolute">
     <parent link="HipsLink"/>
     <child link="torso2lleg_1"/>
-    <origin rpy="0.0 0.0 0.0" xyz="-0.0 0.1 -0.1"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.0 0.1 -0.15"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="-0.0 0.09 -0.13"/> -->
     <axis xyz="1 0 0"/>
     <limit effort="100" lower="-0.52" upper="0.87" velocity="100"/>
   </joint>
@@ -656,6 +722,7 @@
     <parent link="LLegLink"/>
     <child link="LShinLink"/>
     <origin rpy="0.0 0.0 0.0" xyz="-0.025 0.0 -0.35"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="-0.025 0.0 -0.32"/> -->
     <axis xyz="0 1 0"/>
     <limit effort="60" lower="0.0" upper="2.6" velocity="100"/>
   </joint>
@@ -672,7 +739,7 @@
   <joint name="LAnkle_0" type="revolute">
     <parent link="LShinLink"/>
     <child link="shin2lankle_1"/>
-    <origin rpy="0.0 0.0 0.0" xyz="-0.025 0.0 -0.37"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.025 0.0 -0.375"/>
     <axis xyz="0 1 0"/>
     <limit effort="100" lower="-0.78" upper="1.3" velocity="100"/>
   </joint>
@@ -706,7 +773,8 @@
   <joint name="RLeg_0" type="revolute">
     <parent link="HipsLink"/>
     <child link="torso2rleg_1"/>
-    <origin rpy="0.0 0.0 0.0" xyz="-0.0 -0.1 -0.1"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.0 -0.1 -0.15"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="-0.0 -0.09 -0.13"/> -->
     <axis xyz="1 0 0"/>
     <limit effort="100" lower="-0.87" upper="0.52" velocity="100"/>
   </joint>
@@ -734,6 +802,7 @@
     <parent link="RLegLink"/>
     <child link="RShinLink"/>
     <origin rpy="0.0 0.0 0.0" xyz="-0.025 0.0 -0.35"/>
+    <!-- <origin rpy="0.0 0.0 0.0" xyz="-0.025 0.0 -0.32"/> -->
     <axis xyz="0 1 0"/>
     <limit effort="60" lower="0.0" upper="2.6" velocity="100"/>
   </joint>
@@ -750,7 +819,7 @@
   <joint name="RAnkle_0" type="revolute">
     <parent link="RShinLink"/>
     <child link="shin2rankle_1"/>
-    <origin rpy="0.0 0.0 0.0" xyz="-0.025 0.0 -0.37"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.025 0.0 -0.375"/>
     <axis xyz="0 1 0"/>
     <limit effort="100" lower="-0.78" upper="1.3" velocity="100"/>
   </joint>

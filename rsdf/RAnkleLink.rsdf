@@ -1,6 +1,6 @@
 <robot name="human">
   <planar_surface name="RightSole" link="RAnkleLink">
-    <origin xyz="0 0 -0.1" rpy="0 0 0" />
+    <origin xyz="0 0 -0.13" rpy="0 0 0" />
     <points>
       <point xy="-0.08 0.05" />
       <point xy="0.17 0.05" />
@@ -11,7 +11,7 @@
   </planar_surface>
 
   <planar_surface name="RFsensor" link="RAnkleLink">
-    <origin xyz="0.088 0 -0.1" rpy="0 0 0" />
+    <origin xyz="0.09 0 -0.13" rpy="0 0 0" />
     <points>
       <point xy="-0.018 0.021" />
       <point xy="0.018 0.021" />
@@ -22,7 +22,7 @@
   </planar_surface>
 
   <planar_surface name="RBsensor" link="RAnkleLink">
-    <origin xyz="-0.041 0 -0.1" rpy="0 0 0" />
+    <origin xyz="-0.045 0 -0.13" rpy="0 0 0" />
     <points>
       <point xy="-0.018 0.021" />
       <point xy="0.018 0.021" />
