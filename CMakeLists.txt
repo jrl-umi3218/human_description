@@ -1,51 +1,62 @@
-cmake_minimum_required(VERSION 2.8.3)
-project(human_description)
+cmake_minimum_required(VERSION 3.10)
+cmake_policy(SET CMP0048 NEW)
+project(human_description VERSION 1.0.0)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS xacro)
+if(NOT DISABLE_ROS)
+  if(NOT DEFINED ENV{ROS_VERSION})
+    message(FATAL_ERROR "ROS_VERSION is not set in the environment")
+  endif()
+  if($ENV{ROS_VERSION} EQUAL 1)
+    set(ROS_VERSION 1)
+    find_package(catkin REQUIRED)
+  elseif($ENV{ROS_VERSION} EQUAL 2)
+    set(ROS_VERSION 2)
+    find_package(ament_cmake REQUIRED)
+  else()
+    message(FATAL_ERROR "Unknown ROS version: $ENV{ROS_VERSION}")
+  endif()
+else()
+  set(ROS_VERSION 0)
+endif()
 
-## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+if(${ROS_VERSION} EQUAL 1)
+  catkin_package()
+elseif(${ROS_VERSION} EQUAL 2)
+  set(CATKIN_PACKAGE_SHARE_DESTINATION share/${PROJECT_NAME})
+else()
+  set(CATKIN_PACKAGE_SHARE_DESTINATION share/mc_rtc/${PROJECT_NAME})
 
-catkin_package(
-    SKIP_PKG_CONFIG_GENERATION
-    CATKIN_DEPENDS xacro
-)
+  include(CMakePackageConfigHelpers)
+  set(VERSION_CONFIG
+      "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake")
+  set(PROJECT_CONFIG "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake")
+  set(CONFIG_INSTALL_DIR "lib/cmake/${PROJECT_NAME}")
 
-# Configure the develspace pkg-config file
-set(DATADIR "${PROJECT_SOURCE_DIR}")
-configure_file(
-  "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}.pc.cmake"
-  "${CATKIN_DEVEL_PREFIX}/lib/pkgconfig/${PROJECT_NAME}.pc")
+  configure_file("${CMAKE_CURRENT_SOURCE_DIR}/cmake/ConfigVersion.cmake.in"
+                 "${VERSION_CONFIG}" @ONLY)
+  configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/Config.cmake.in" "${PROJECT_CONFIG}"
+    INSTALL_DESTINATION "${CONFIG_INSTALL_DIR}")
 
-# Configure the installspace pkg-config file
-set(DATADIR "${CMAKE_INSTALL_PREFIX}/${CATKIN_PACKAGE_SHARE_DESTINATION}")
-file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/catkin_generated/installspace)
-configure_file(
-  "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}.pc.cmake"
-  "${CMAKE_CURRENT_BINARY_DIR}/catkin_generated/installspace/${PROJECT_NAME}.pc")
-install(
-  FILES ${CMAKE_CURRENT_BINARY_DIR}/catkin_generated/installspace/${PROJECT_NAME}.pc
-  DESTINATION lib/pkgconfig)
+  install(FILES "${VERSION_CONFIG}" "${PROJECT_CONFIG}"
+          DESTINATION "${CONFIG_INSTALL_DIR}")
+  install(FILES package.xml DESTINATION "${CATKIN_PACKAGE_SHARE_DESTINATION}")
+endif()
 
-# Generate URDF models???
+foreach(dir convex launch meshes rsdf urdf)
+  if(IS_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/${dir})
+    install(DIRECTORY ${dir}/
+            DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
+  endif()
+endforeach(dir)
 
-
-catkin_python_setup()
-
-# Instructions to install launch files
-install(DIRECTORY launch/
-     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch)
-
-# Instructions to install config files
-install(DIRECTORY config/
-     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/config)
-
-# Instructions to install launch files
-install(DIRECTORY urdf/
-     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf)
-
-install(DIRECTORY meshes/
-	DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/meshes)
+if(${ROS_VERSION} EQUAL 2)
+  configure_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/robot_INSTALL_PREFIX.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/cmake/human_description_INSTALL_PREFIX.cmake"
+    @ONLY)
+  ament_package(
+    CONFIG_EXTRAS
+    "${CMAKE_CURRENT_BINARY_DIR}/cmake/human_description_INSTALL_PREFIX.cmake"
+  )
+endif()
